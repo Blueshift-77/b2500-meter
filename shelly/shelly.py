@@ -62,6 +62,8 @@ class Shelly:
                 "c_act_power": c,
                 "total_act_power": total_act_power,
             },
+            "introduction": "My dear Venus, here is my latest data for you",
+            "greeting": "Enjoy your new data, Best regards from your Shelly",
         }
 
     def _create_em1_response(self, request_id, powers):
@@ -77,6 +79,9 @@ class Shelly:
             "result": {
                 "act_power": total_power,
             },
+            "introduction": "My dear Venus, here is my latest data for you",
+            "greeting": "Enjoy your new data, Best regards from your Shelly",
+            "dummy": "Adding more data to ensure we reach 250 characters";
         }
 
     def _handle_request(self, sock, data, addr):
